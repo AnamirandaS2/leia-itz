@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply font-poppins font-semibold text-gray-750 text-4xl md:text-5xl xl:text-[3.5rem];
+  }
+  h5 {
+    @apply font-poppins font-normal text-gray-750 text-lg;
+  }
+  input {
+    @apply border-solid border w-full pl-6 py-5 bg-white rounded-md border-[#d7d7d7] font-poppins font-normal text-base text-gray-500 focus:border-green focus:outline-none;
+  }
+  p {
+    @apply font-poppins;
+  }
+}
