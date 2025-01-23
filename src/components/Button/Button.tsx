@@ -2,7 +2,7 @@ import { forwardRef } from "react";
 import { tv } from "tailwind-variants";
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  color?: "green";
+  color: "green" | "purple" | "pink";
 }
 
 const ButtonVariants = tv({
@@ -10,6 +10,8 @@ const ButtonVariants = tv({
   variants: {
     color: {
       green: "bg-green",
+      purple: "bg-purple",
+      pink: "bg-pink",
     },
   },
 });

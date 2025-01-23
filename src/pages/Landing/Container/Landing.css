@@ -1,0 +1,12 @@
+.wave {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to left, #d81e5b, #5429cc, #ffa219);
+    clip-path: path(
+      "M2150,0 C1920,550 2520,50 1950,50 C820,850 140,1150 0,946 L0,1000 L1920,1050 Z"
+    );
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  

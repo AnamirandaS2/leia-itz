@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import LoginSVG from "../../assets/login.svg";
-import { Button } from "../../components/Button";
+import { Button } from "../../components/Button/Button";
+import { InputPassword } from "../../components/Input/InputPassword";
 
 export function SingUpContainer() {
   return (
@@ -23,10 +24,11 @@ export function SingUpContainer() {
               <div className="flex flex-col gap-4 w-full">
                 <input type="text" placeholder="Nome completo" required />
                 <input type="email" placeholder="Email" required />
-                <input type="email" placeholder="Email" required />
+                <InputPassword placeholder="Senha" />
+                <InputPassword placeholder="Repita a senha" />
               </div>
             </div>
-            <Button>Entrar</Button>
+            <Button color="green">Entrar</Button>
           </form>
         </div>
       </div>

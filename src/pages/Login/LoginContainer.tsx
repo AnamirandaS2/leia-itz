@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
 import LoginSVG from "../../assets/login.svg";
-import { Button } from "../../components/Button";
+import { Button } from "../../components/Button/Button";
 import { useState } from "react";
 import { Eye, EyeClosed } from "lucide-react";
+import { InputPassword } from "../../components/Input/InputPassword";
 
 export function LoginContainer() {
-  const [showPassword, setShowPassword] = useState(false);
   return (
     <div className="flex w-[100vw] h-[100vh] pt-6 ">
       <div className="w-[55%] h-full flex items-center justify-center ">
@@ -23,26 +23,7 @@ export function LoginContainer() {
             <div className="flex flex-col gap-2 w-full">
               <div className="flex flex-col gap-4 w-full">
                 <input type="email" placeholder="Email" required />
-                <div className="w-full relative">
-                  <input
-                    type={showPassword ? "text" : "password"}
-                    placeholder="Confirme a senha"
-                    required
-                  />
-                  {showPassword ? (
-                    <Eye
-                      size={20}
-                      onClick={() => setShowPassword(!showPassword)}
-                      className="absolute right-5 top-[50%] translate-y-[-50%] stroke-[#707378] cursor-pointer"
-                    />
-                  ) : (
-                    <EyeClosed
-                      size={20}
-                      onClick={() => setShowPassword(!showPassword)}
-                      className="absolute right-5 top-[50%] translate-y-[-50%] stroke-[#707378] cursor-pointer"
-                    />
-                  )}
-                </div>
+                <InputPassword placeholder="Senha" />
               </div>
               <span className="flex gap-1">
                 <p>Esqueceu a senha?</p>
@@ -54,7 +35,7 @@ export function LoginContainer() {
                 </Link>
               </span>
             </div>
-            <Button>Entrar</Button>
+            <Button color="green">Entrar</Button>
           </form>
         </div>
       </div>
