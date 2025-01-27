@@ -4,7 +4,7 @@
 
 @layer base {
   h1 {
-    @apply font-poppins font-semibold text-gray-750 text-4xl md:text-5xl xl:text-[3.5rem];
+    @apply font-poppins font-semibold text-gray-750 text-xl md:text-5xl;
   }
   h5 {
     @apply font-poppins font-normal text-gray-750 text-lg;
@@ -15,18 +15,4 @@
   p {
     @apply font-poppins;
   }
-}
-
-html,
-body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  overflow-y: auto; 
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
 }
