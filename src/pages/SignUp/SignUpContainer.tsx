@@ -28,7 +28,9 @@ export function SingUpContainer() {
                 <InputPassword placeholder="Repita a senha" />
               </div>
             </div>
-            <Button color="green">Entrar</Button>
+            <Button py="4" color="green">
+              Entrar
+            </Button>
           </form>
         </div>
       </div>
