@@ -2,7 +2,6 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
 import "./index.css";
-import App from "./App.tsx";
 import { Route, Routes } from "react-router";
 import { LoginPage } from "./pages/Login/LoginPage.tsx";
 import { SignUpPage } from "./pages/SignUp/SignUpPage.tsx";
@@ -19,6 +18,10 @@ createRoot(document.getElementById("root")!).render(
         <Route path="/cadastrar" element={<SignUpPage />} />
         <Route element={<ProtectedPage />}>
           <Route path="/home" element={<HomePage />} />
+          <Route path="/biblioteca" element={<HomePage />} />
+          <Route path="/colecoes" element={<HomePage />} />
+          <Route path="/emprestimos" element={<HomePage />} />
+          <Route path="/atividade" element={<HomePage />} />
         </Route>
       </Routes>
     </BrowserRouter>
