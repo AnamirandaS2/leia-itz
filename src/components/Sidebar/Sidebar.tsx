@@ -19,7 +19,7 @@ export default function Sidebar() {
           Cecília Almeida
         </p>
       </div>
-      <div className="w-full flex flex-col gap-3 items-center justify-center px-5">
+      <div className="w-full flex flex-col gap-3 items-center justify-center px-2">
         <NavButton Icon={HomeIcon} title="Home" to="home" />
         <NavButton Icon={LibraryBigIcon} title="Biblioteca" to="biblioteca" />
         <NavButton Icon={Bookmark} title="Coleções" to="colecoes" />
